@@ -40,12 +40,6 @@ ax_hist = df.plot.hist(ax = axes , bins= 20, density=1, alpha=0.4 , grid=True, t
 ax_hist.set_xlabel('Longitud del tweet')
 ax_hist.set_ylabel('Densidad de probabilidad estimada')
 
-
-#~ ax_boxplot = df.boxplot(ax = axes[1] , vert=False )
-#~ ax_boxplot.set_title( 'Media,Varianza,Min,Max')
-#~ ax_boxplot.set_xlabel('Longitud del tweet')
-#~ ax_boxplot.set_xlabel('Probabilidad')
-
 plt.subplots_adjust(hspace=0.5)
 
 fig.savefig("visualizacion.png", bbox_inches='tight')
